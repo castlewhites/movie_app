@@ -1,0 +1,26 @@
+@import '../../General.scss';
+
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @extend .flex-row;
+  color: #fff;
+  justify-content: space-between;
+  padding: 20px 50px;
+  &-logo{
+    @extend .flex-row;
+    &-red{
+      color: $red-secundary;
+      font-weight: bold
+    }
+  }
+  &-menu{
+    @extend .flex-row;
+    list-style-type: none;
+    width: 60%;
+    justify-content: space-between;
+
+  }
+}

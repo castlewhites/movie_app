@@ -1,0 +1,28 @@
+@import '../../General.scss';
+
+*{
+  color: #fff;
+}
+
+.card-container{
+  width: 300px;
+  height: 230px;
+  position: relative;
+  &-progress{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;   
+    & progress{
+      width: inherit;
+    }
+    & span{
+      font-size: 12px;
+    }
+  }
+  &-description{
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+
