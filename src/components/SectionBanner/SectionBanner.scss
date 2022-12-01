@@ -1,6 +1,25 @@
+@import '../../General.scss';
+
 .sectionBanner{
   width: 100%;
   padding: 50px;
+
+  &__title{
+    width: 100%;
+    align-items: center;
+    @extend .flex-row;
+    margin-bottom: 12px;
+  }
+  &__bar{
+    border:none;
+    color:white;
+    width: 200px;
+    border-radius: 8px 0 0 8px;
+    height:5px;
+    background:black;
+    background: linear-gradient(90deg, #af150f, #0d0d0d);
+    margin-left: 20px;
+  }
   &__movies{
     display: flex;
     overflow-y: hidden;

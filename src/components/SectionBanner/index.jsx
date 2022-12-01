@@ -6,7 +6,10 @@ import MovieCard from '../MovieCard';
 function SectionBanner({ title, movieList }) {
   return (
     <section className="sectionBanner">
-      <h1 style={{ color: '#fff' }}>{ title }</h1>
+      <div className="sectionBanner__title">
+        <h1 style={{ color: '#fff' }}>{ title }</h1>
+        <span className="sectionBanner__bar" />
+      </div>
       <div className="sectionBanner__movies">
         {
           movieList.map((movie) => (
