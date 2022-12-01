@@ -1,0 +1,9 @@
+.sectionBanner{
+  width: 100%;
+  padding: 50px;
+  &__movies{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+}

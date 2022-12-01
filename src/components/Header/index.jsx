@@ -1,14 +1,12 @@
 import React from 'react';
 import './Header.scss';
+import Logo from '../Logo';
 
 function Header() {
   const menuOps = ['HOME', 'Popular', 'Series', 'Profile'];
   return (
     <nav className="header">
-      <div className="header-logo">
-        <p className="header-logo-red">MOVIE</p>
-        <p className="header-logo-white">DOM</p>
-      </div>
+      <Logo />
       <ul className="header-menu">
         {
           menuOps.map((op) => (

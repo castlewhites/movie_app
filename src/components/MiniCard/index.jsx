@@ -1,17 +1,22 @@
 import React from 'react';
 import './MiniCard.scss';
+import ReactPlayer from 'react-player';
 
 function MiniCard() {
   return (
     <article className="card-container">
       <figure>
-        <iframe width="300" height="200" src="https://www.youtube.com/embed/lUO9lBtpHRs?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+        <ReactPlayer
+          url="https://youtu.be/j-dlYiyliUQ"
+          width="100%"
+          height="100%"
+        />
         <div className="card-container-progress">
-          <span>11 min from 23 min</span>
-          <progress max={100} value="30"> 70% </progress>
+          <p>11 min from 23 min</p>
+          <progress max={100} value={30}>70%</progress>
         </div>
         <figcaption className="card-container-description">
-          Harry Potter
+          Hola
         </figcaption>
       </figure>
     </article>
