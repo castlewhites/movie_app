@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import Logo from '../Logo';
+import Search from '../Search';
 
 function Header() {
   const menuOps = ['HOME', 'Popular', 'Series', 'Profile'];
@@ -18,6 +19,8 @@ function Header() {
           ))
         }
       </ul>
+      <Search />
+
     </nav>
   );
 }

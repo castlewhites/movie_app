@@ -1,0 +1,22 @@
+.input{
+  position: relative;
+  width: 200px;
+
+  &-search{
+    box-sizing: border-box;
+    padding: 15px 15px 15px 45px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    &__icon{
+      color: #fff;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -5,6 +5,7 @@ import { getMovies } from '../connection/ApiConnection';
 
 export function useGetMovies() {
   const [movieList, setMovieList] = useState([]);
+
   useEffect(() => {
     const movies = getMovies();
     movies.then((res) => {
@@ -14,5 +15,6 @@ export function useGetMovies() {
         console.log('error:', error);
       });
   }, []);
+
   return movieList;
 }
